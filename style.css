@@ -3,8 +3,34 @@
     padding: 0;
 }
 
-div{
-    min-height: 100px;
+.hero-container{
+    background-color: palegoldenrod;
+     min-height: 100px;
+}
+
+.about-container{
+    background-color: antiquewhite;
+     min-height: 100px;
+}
+
+.portfolio-container{
+    background-color: aquamarine;
+     min-height: 100px;
+}
+
+.testimonial-container{
+    background-color: azure;
+     min-height: 100px;
+}
+
+.contact-container{
+    background-color: blanchedalmond;
+     min-height: 100px;
+}
+
+.footer-container{
+    background-color: grey;
+     min-height: 100px;
 }
 
 
