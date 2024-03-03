@@ -15,7 +15,7 @@
 
 <body>
     <div class="container-fluid fluid-body">
-        <nav class="navbar navbar-expand-md navbar-light bg-light fixed-md-bottom">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-grey shadow-5-strong sticky-top">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                     <img src="logo/logo.png" alt="bright connect logo">
@@ -26,15 +26,15 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse col-md-4 float-start" id="navbarNavDropdown">
-                    <ul class="navbar-nav nav-pills nav-fill float-end col-md-8 bg-warning">
+                    <ul class="navbar-nav nav-pills nav-fill float-end col-md-8">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
+                            <a class="nav-link" href="#about">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
+                            <a class="nav-link" href="#contact">Contact</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
@@ -52,8 +52,8 @@
                                 Pages
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">About</a></li>
-                                <li><a class="dropdown-item" href="#">Portfolio</a></li>
+                                <li><a class="dropdown-item" href="#about">About</a></li>
+                                <li><a class="dropdown-item" href="#portfolio">Portfolio</a></li>
                                 <li><a class="dropdown-item" href="#">Collaboration</a></li>
                             </ul>
                         </li>
@@ -74,10 +74,9 @@
                         </div>
                     </div>
                 </div>
-            </div>
 
         </section>
-        <section class="container about-container">
+        <section class="container about-container" id="about">
 
             <div class="row about">
                 <div class="col-lg-6">
@@ -149,7 +148,7 @@
                 </div>
             </div>
         </section>
-        <section class="container portfolio-container">
+        <section class="container portfolio-container" id="portfolio">
 
             <div class="row portfolio">
                 <div class="col-md-12">
@@ -195,7 +194,7 @@
                     </div>
                     <div class="row justify-content-center align-items-center">
                         <div class="col-md-10"">
-                            <h2 class="lead mt-1 ps-5 mb-2">Portfolio</h2>
+                            <h2 class=" lead mt-1 ps-5 mb-2">Portfolio</h2>
                         </div>
                         <div class="col-md-10">
                             <p class="display-4 mt-1 ps-5 mb-2">Take a look around some of my awesome works</p>
@@ -293,7 +292,7 @@
             </div>
 
         </section>
-        <section class="container contact-container mt-5 mb-5">
+        <section class="container contact-container mt-5 mb-5" id="contact">
 
             <div class="row mb-5">
                 <div class="col-md-8 mt-5 mb-5">
@@ -341,11 +340,12 @@
 
 
 
-    <!-- Modal for Contact Us -->
 
 
-    <!-- Modal for contact us ends here -->
+
+
 </body>
+<!-- Modal for Contact Us -->
 <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
     aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
@@ -355,15 +355,49 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                ...
+                <form>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="email" aria-describedby="emaildisclaimer">
+                        <div id="emaildisclaimer" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="company" class="form-label">Company Name</label>
+                        <input type="text" class="form-control" id="company">
+                    </div>
+                    <div class="mb-3">
+                        <label for="companyurl" class="form-label">Company Website</label>
+                        <input type="text" class="form-control" id="companyurl">
+                    </div>
+                    <div class="mb-3">
+                        <label for="request" class="form-label">Request</label>
+                        <input type="text" class="form-control" id="request">
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label"></label>
+                        <textarea name="message" id="message" cols="30" rows="10" class="form-control"
+                            id="message"></textarea>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                    <button type="submit" class="btn btn-success fa fa-check"></button>
+                    <button type="reset" class="btn btn-warning fa fa-rotate-right"></button>
+                </form>
             </div>
             <div class="modal-footer">
-                <button type="submit" class="btn btn-success fa fa-check"></button>
-                <button type="reset" class="btn btn-warning fa fa-rotate-right" data-bs-dismiss="modal"></button>
                 <button type="button" class="btn btn-danger fa fa-close" data-bs-dismiss="modal"></button>
             </div>
         </div>
     </div>
 </div>
+
+<!-- Modal for contact us ends here -->
+
+<!-- Off Canvas Start here -->
+
+
+<!-- Off Canvas Ends here -->
 
 </html>
