@@ -1,3 +1,6 @@
+@import "material.css";
+
+
 * {
     margin: 0;
     padding: 0;
@@ -21,29 +24,44 @@ body{
     padding: 20px;}
 
 .about-container {
-    background-color: antiquewhite;
+    background-color: #F0FFFF;
     min-height: 100px;
 }
 
+.header-title{
+    font-family: 'Protest Guerrilla' ,'Castoro Titling', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sub-title{
+    font-family: 'Protest Guerrilla';
+}
+
+.years{
+    color: green !important;
+}
+
 .portfolio-container {
-    background-color: #FFFFFF;
+    background-color: #F0FFFF;
     color: #0A0B4D;
     min-height: 100px;
 }
 
 .testimonial-container {
-    background-color: azure;
+    background-color: #F0FFFF;
+    color: #0A0B4D;
     min-height: 100px;
 }
 
 .contact-container {
-    background-color: blanchedalmond;
-    min-height: 100px;
+    background-color: #F0FFFF;
+    color: #0A0B4D;
+    min-height: 50px;
 }
 
 .footer-container {
-    background-color: grey;
-    min-height: 100px;
+    background-color: #F0FFFF;
+    color: #0A0B4D;
+    min-height: 5px;
 }
 
 .card-highlight{
@@ -53,6 +71,11 @@ body{
 }
 .card-highlight:hover{
     border: 1px solid grey;
+}
+
+.card-highlight button:hover{
+    background-color: #0A0B4D !important;
+    color: white !important;
 }
 
 section{
@@ -71,5 +94,5 @@ section{
 
 a{
     text-decoration: none !important;
-    color: white !important;
+    color: #0A0B4D !important;
 }
